@@ -131,6 +131,7 @@ export function Hero() {
 
   return (
     <section
+      id="hero"
       ref={heroRef}
       className="relative w-full overflow-hidden bg-gradient-to-br from-blue-900 to-blue-700 py-16 md:py-24 lg:min-h-screen lg:py-32"
     >

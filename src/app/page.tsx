@@ -184,7 +184,7 @@ export default function Home() {
               size="lg"
               className="bg-yellow-500 hover:bg-yellow-600 text-blue-900 font-bold px-8 py-6 text-xl"
             >
-              <a href="#header">
+              <a href="#hero">
                 Get Started Now <ArrowRight className="ml-2 h-5 w-5" />
               </a>
             </Button>
