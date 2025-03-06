@@ -3,49 +3,12 @@ import { Button } from '@/components/ui/button';
 import { CheckCircle, AlertTriangle, Zap, Shield, ArrowRight } from 'lucide-react';
 import NewsComparisonMockup from '@/components/news-comparison-mockup';
 import TestimonialCard from '../components/testimonial-card';
-import PricingCard from '../components/pricing-card';
-import NewsletterSignup from '../components/newsletter-signup';
-import HeroEmailForm from '../components/hero-email-form';
+import { Hero } from '@/components/hero';
 
 export default function Home() {
   return (
     <main className="flex flex-col min-h-screen ">
-      {/* Hero Section */}
-      <header id="header" className="bg-gradient-to-r from-blue-900 to-blue-700 text-white">
-        <div className="container mx-auto px-4 py-20 md:py-32 max-w-screen-xl ">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-12">
-            <div className="md:w-1/2 space-y-6">
-              <div className="inline-block bg-blue-600 px-4 py-1 rounded-full text-sm font-semibold mb-2">
-                THE TRUTH REVOLUTION
-              </div>
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
-                Stop Being <span className="text-yellow-400">Manipulated</span> By Biased Media
-              </h1>
-              <p className="text-xl md:text-2xl text-blue-100">
-                Get informed quickly with news that's verified, balanced, and free from ideological
-                manipulation.
-              </p>
-              <div className="pt-4 w-full">
-                <HeroEmailForm />
-              </div>
-            </div>
-            <div className="md:w-1/2">
-              <div className="relative w-full max-w-md mx-auto">
-                <div className="absolute -top-4 -left-4 w-full h-full bg-yellow-400 rounded-lg"></div>
-                <div className="relative bg-white rounded-lg shadow-xl overflow-hidden">
-                  <Image
-                    src="/placeholder.svg?height=600&width=800"
-                    alt="News app dashboard"
-                    width={800}
-                    height={600}
-                    className="w-full h-auto"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </header>
+      <Hero />
 
       {/* Problem Statement Section */}
       <section className="py-20 bg-gray-50">
