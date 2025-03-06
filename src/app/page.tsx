@@ -5,12 +5,13 @@ import NewsComparisonMockup from '@/components/news-comparison-mockup';
 import TestimonialCard from '../components/testimonial-card';
 import PricingCard from '../components/pricing-card';
 import NewsletterSignup from '../components/newsletter-signup';
+import HeroEmailForm from '../components/hero-email-form';
 
 export default function Home() {
   return (
     <main className="flex flex-col min-h-screen ">
       {/* Hero Section */}
-      <header className="bg-gradient-to-r from-blue-900 to-blue-700 text-white">
+      <header id="header" className="bg-gradient-to-r from-blue-900 to-blue-700 text-white">
         <div className="container mx-auto px-4 py-20 md:py-32 max-w-screen-xl ">
           <div className="flex flex-col md:flex-row items-center justify-between gap-12">
             <div className="md:w-1/2 space-y-6">
@@ -24,13 +25,8 @@ export default function Home() {
                 Get informed quickly with news that's verified, balanced, and free from ideological
                 manipulation.
               </p>
-              <div className="flex flex-col sm:flex-row gap-4 pt-4">
-                <Button
-                  size="lg"
-                  className="bg-yellow-500 hover:bg-yellow-600 text-blue-900 font-bold"
-                >
-                  Start Your Free Trial <ArrowRight className="ml-2 h-5 w-5" />
-                </Button>
+              <div className="pt-4 w-full">
+                <HeroEmailForm />
               </div>
             </div>
             <div className="md:w-1/2">
@@ -327,14 +323,14 @@ export default function Home() {
               worldview.
             </p>
             <Button
+              asChild
               size="lg"
               className="bg-yellow-500 hover:bg-yellow-600 text-blue-900 font-bold px-8 py-6 text-xl"
             >
-              Get Started Now <ArrowRight className="ml-2 h-5 w-5" />
+              <a href="#header">
+                Get Started Now <ArrowRight className="ml-2 h-5 w-5" />
+              </a>
             </Button>
-            <p className="mt-6 text-blue-300">
-              14-day free trial. No credit card required. Cancel anytime.
-            </p>
           </div>
         </div>
       </section>
