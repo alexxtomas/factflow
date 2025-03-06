@@ -30,33 +30,6 @@ export function MockupShowcase() {
     },
   };
 
-  const cardVariants = {
-    hidden: { y: 100, opacity: 0 },
-    visible: (i: number) => ({
-      y: 0,
-      opacity: 1,
-      transition: {
-        type: 'spring',
-        stiffness: 50,
-        damping: 20,
-        delay: 0.6 + i * 0.2,
-      },
-    }),
-  };
-
-  const glowVariants = {
-    hidden: { opacity: 0, scale: 0.8 },
-    visible: {
-      opacity: [0.5, 0.3, 0.5],
-      scale: 1.2,
-      transition: {
-        duration: 3,
-        repeat: Number.POSITIVE_INFINITY,
-        repeatType: 'reverse',
-        ease: 'easeInOut',
-      },
-    },
-  };
   return (
     <section ref={ref} className="py-20 bg-blue-900 text-white">
       <div className="container mx-auto px-4 max-w-screen-xl">

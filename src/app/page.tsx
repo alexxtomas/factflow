@@ -1,7 +1,5 @@
-import Image from 'next/image';
 import { Button } from '@/components/ui/button';
-import { CheckCircle, AlertTriangle, Zap, Shield, ArrowRight } from 'lucide-react';
-import NewsComparisonMockup from '@/components/news-comparison-mockup';
+import { ArrowRight } from 'lucide-react';
 import TestimonialCard from '../components/testimonial-card';
 import { Hero } from '@/components/hero';
 import { ProblemStatmentSection } from '@/components/problem-statment-section';

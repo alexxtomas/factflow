@@ -30,7 +30,7 @@ export async function POST(request: Request) {
     }
 
     // Add the contact to Mailjet list
-    const response = await mailjet
+    await mailjet
       .post('contactslist', { version: 'v3' })
       .id(CONTACT_LIST_ID)
       .action('managecontact')
@@ -42,8 +42,6 @@ export async function POST(request: Request) {
         Email: email,
       });
 
-    console.log(response);
-
     // Return success response
     return NextResponse.json(
       { success: true, message: 'Successfully subscribed to the waitlist' },
@@ -54,7 +52,7 @@ export async function POST(request: Request) {
 
     // Check if it's a Mailjet error with error code
     if (error && typeof error === 'object' && 'statusCode' in error) {
-      const mailjetError = error as any;
+      const mailjetError = error as { message?: string; statusCode?: number };
 
       // Handle duplicate subscription more gracefully
       if (mailjetError.statusCode === 400 && mailjetError.message?.includes('already exists')) {

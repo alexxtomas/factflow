@@ -1,13 +1,11 @@
 'use client';
 
 import { useEffect, useRef, useState } from 'react';
-import { motion, useAnimation, useInView, AnimatePresence } from 'framer-motion';
-import { AlertTriangle, Shield, Zap, ArrowRight, ChevronDown } from 'lucide-react';
-import { Button } from '@/components/ui/button';
+import { motion, useAnimation, useInView } from 'framer-motion';
+import { AlertTriangle, Shield, Zap } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 
 export function ProblemStatmentSection() {
-  const controls = useAnimation();
   const titleControls = useAnimation();
   const cardsControls = useAnimation();
 
@@ -15,7 +13,6 @@ export function ProblemStatmentSection() {
   const isInView = useInView(heroRef, { once: true, amount: 0.3 });
 
   const [hoveredCard, setHoveredCard] = useState<number | null>(null);
-  const [scrollIndicator, setScrollIndicator] = useState(false);
 
   useEffect(() => {
     if (isInView) {
@@ -26,11 +23,6 @@ export function ProblemStatmentSection() {
       setTimeout(() => {
         cardsControls.start('visible');
       }, 1000);
-
-      // Show scroll indicator after all animations
-      setTimeout(() => {
-        setScrollIndicator(true);
-      }, 2500);
     }
   }, [isInView, titleControls, cardsControls]);
 
@@ -125,27 +117,6 @@ export function ProblemStatmentSection() {
         duration: 0.2,
         ease: 'easeOut',
       },
-    },
-  };
-
-  const scrollIndicatorVariants = {
-    hidden: { opacity: 0, y: -10 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: {
-        duration: 0.6,
-      },
-    },
-  };
-
-  const bounceAnimation = {
-    y: [0, -8, 0],
-    transition: {
-      duration: 1.5,
-      repeat: Number.POSITIVE_INFINITY,
-      repeatType: 'loop',
-      ease: 'easeInOut',
     },
   };
 
