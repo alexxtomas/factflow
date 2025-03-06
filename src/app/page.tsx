@@ -4,128 +4,21 @@ import { CheckCircle, AlertTriangle, Zap, Shield, ArrowRight } from 'lucide-reac
 import NewsComparisonMockup from '@/components/news-comparison-mockup';
 import TestimonialCard from '../components/testimonial-card';
 import { Hero } from '@/components/hero';
+import { ProblemStatmentSection } from '@/components/problem-statment-section';
+import { SolutionSection } from '@/components/solution-section';
+import { MockupShowcase } from '@/components/mockup-showcase';
 
 export default function Home() {
   return (
     <main className="flex flex-col min-h-screen ">
       <Hero />
-
-      {/* Problem Statement Section */}
-      <section className="py-20 bg-gray-50">
-        <div className="container mx-auto px-4  max-w-screen-xl">
-          <div className="max-w-3xl mx-auto text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              The Media Is <span className="text-red-600">Lying</span> To You
-            </h2>
-            <p className="text-xl text-gray-600">
-              Every day, you're bombarded with news designed to manipulate your emotions and push
-              hidden agendas.
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="bg-white p-8 rounded-lg shadow-md">
-              <div className="w-12 h-12 bg-red-100 rounded-full flex items-center justify-center mb-6">
-                <AlertTriangle className="h-6 w-6 text-red-600" />
-              </div>
-              <h3 className="text-xl font-bold mb-4">Fake News Epidemic</h3>
-              <p className="text-gray-600">
-                73% of Americans say they regularly encounter fake news. The media profits from your
-                confusion.
-              </p>
-            </div>
-
-            <div className="bg-white p-8 rounded-lg shadow-md">
-              <div className="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center mb-6">
-                <Shield className="h-6 w-6 text-orange-600" />
-              </div>
-              <h3 className="text-xl font-bold mb-4">Extreme Bias</h3>
-              <p className="text-gray-600">
-                News outlets don't report facts—they push narratives designed to keep you in your
-                ideological bubble.
-              </p>
-            </div>
-
-            <div className="bg-white p-8 rounded-lg shadow-md">
-              <div className="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mb-6">
-                <Zap className="h-6 w-6 text-purple-600" />
-              </div>
-              <h3 className="text-xl font-bold mb-4">Information Overload</h3>
-              <p className="text-gray-600">
-                The average person is exposed to 10,000+ headlines per day, making it impossible to
-                know what matters.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
+      <ProblemStatmentSection />
 
       {/* Solution Section */}
-      <section className="py-20">
-        <div className="container mx-auto px-4 max-w-screen-xl">
-          <div className="max-w-3xl mx-auto text-center mb-16">
-            <div className="inline-block bg-blue-100 text-blue-800 px-4 py-1 rounded-full text-sm font-semibold mb-4">
-              THE SOLUTION
-            </div>
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              Introducing FactFlow: News Without the Manipulation
-            </h2>
-            <p className="text-xl text-gray-600">
-              Our advanced AI analyzes thousands of news sources to deliver the most accurate,
-              balanced information.
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 gap-16 items-center">
-            <div>
-              <NewsComparisonMockup />
-            </div>
-            <div className="space-y-8">
-              <div className="flex gap-4">
-                <div className="flex-shrink-0">
-                  <CheckCircle className="h-8 w-8 text-green-500" />
-                </div>
-                <div>
-                  <h3 className="text-xl font-bold mb-2">Cross-Reference Technology</h3>
-                  <p className="text-gray-600">
-                    Our AI compares how the same story is covered across the political spectrum,
-                    exposing bias and revealing the complete picture.
-                  </p>
-                </div>
-              </div>
-
-              <div className="flex gap-4">
-                <div className="flex-shrink-0">
-                  <CheckCircle className="h-8 w-8 text-green-500" />
-                </div>
-                <div>
-                  <h3 className="text-xl font-bold mb-2">Fact-Check Engine</h3>
-                  <p className="text-gray-600">
-                    Every story is automatically verified against trusted sources, flagging
-                    misinformation before it reaches you.
-                  </p>
-                </div>
-              </div>
-
-              <div className="flex gap-4">
-                <div className="flex-shrink-0">
-                  <CheckCircle className="h-8 w-8 text-green-500" />
-                </div>
-                <div>
-                  <h3 className="text-xl font-bold mb-2">Personalized Digest</h3>
-                  <p className="text-gray-600">
-                    Get only the news that matters to you, without the clickbait and sensationalism
-                    designed to hijack your attention.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <SolutionSection />
 
       {/* Mockup Showcase */}
-      <section className="py-20 bg-blue-900 text-white">
+      {/* <section className="py-20 bg-blue-900 text-white">
         <div className="container mx-auto px-4 max-w-screen-xl">
           <div className="max-w-3xl mx-auto text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">See the Difference for Yourself</h2>
@@ -145,9 +38,11 @@ export default function Home() {
                   className="rounded-lg w-full h-auto"
                 />
               </div>
-              <h3 className="text-xl font-bold mb-2">Mobile Experience</h3>
+              <h3 className="text-xl font-bold mb-2"> Web Experience</h3>
+
               <p className="text-blue-200">
-                Get balanced news on the go with our intuitive mobile interface.
+                Discover balanced news anytime, anywhere with our intuitive, desktop-optimized
+                interface designed for seamless browsing.
               </p>
             </div>
 
@@ -185,7 +80,8 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
+      <MockupShowcase />
 
       {/* Testimonials */}
       <section className="py-20">
