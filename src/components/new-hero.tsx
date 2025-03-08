@@ -1,7 +1,7 @@
 'use client';
 
 import { AnimatePresence, motion, useAnimation, useInView } from 'framer-motion';
-import { AlertCircle, ArrowRight, CheckCircle, ChevronDown, ChevronRight } from 'lucide-react';
+import { AlertCircle, ArrowRight, CheckCircle, ChevronDown } from 'lucide-react';
 import { useEffect, useRef, useState } from 'react';
 import { Button } from '@/components/ui/button';
 import ParticleBackground from './particle-background';

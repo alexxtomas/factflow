@@ -1,6 +1,5 @@
 import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
-import { Hero } from '@/components/hero';
 import { ProblemStatmentSection } from '@/components/problem-statment-section';
 import { SolutionSection } from '@/components/solution-section';
 import { FeatureSection } from '@/components/feature-section';
