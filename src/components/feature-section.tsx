@@ -218,7 +218,7 @@ export function FeatureSection() {
                   <div className="relative rounded-lg overflow-hidden shadow-2xl shadow-blue-900/50 border border-blue-700/50 transform transition-all hover:scale-[1.02] duration-500">
                     <div className="absolute inset-0 bg-gradient-to-t from-blue-900/80 to-transparent z-10 opacity-0 hover:opacity-100 transition-opacity duration-300"></div>
                     <Image
-                      src="/1.png"
+                      src="/1.webp"
                       width={800}
                       height={600}
                       alt="FactFlow Web Experience"
@@ -288,7 +288,7 @@ export function FeatureSection() {
                   <div className="relative rounded-lg overflow-hidden shadow-2xl shadow-blue-900/50 border border-blue-700/50 transform transition-all hover:scale-[1.02] duration-500">
                     <div className="absolute inset-0 bg-gradient-to-t from-blue-900/80 to-transparent z-10 opacity-0 hover:opacity-100 transition-opacity duration-300"></div>
                     <Image
-                      src="/2.png"
+                      src="/2.webp"
                       width={800}
                       height={600}
                       alt="FactFlow Bias Detection"
@@ -360,7 +360,7 @@ export function FeatureSection() {
                   <div className="relative rounded-lg overflow-hidden shadow-2xl shadow-blue-900/50 border border-blue-700/50 transform transition-all hover:scale-[1.02] duration-500">
                     <div className="absolute inset-0 bg-gradient-to-t from-blue-900/80 to-transparent z-10 opacity-0 hover:opacity-100 transition-opacity duration-300"></div>
                     <Image
-                      src="/3.png"
+                      src="/3.webp"
                       width={800}
                       height={600}
                       alt="FactFlow Daily Digest"
