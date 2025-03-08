@@ -282,14 +282,6 @@ export function FeatureSection() {
                         </div>
                       </div>
                     </CardContent>
-                    <CardFooter>
-                      <Button
-                        variant="ghost"
-                        className="text-blue-200 hover:text-white hover:bg-blue-700/50"
-                      >
-                        Learn more <ArrowRight className="ml-2 h-4 w-4" />
-                      </Button>
-                    </CardFooter>
                   </Card>
                 </motion.div>
                 <motion.div variants={item} className="order-1 md:order-2 relative">
@@ -362,14 +354,6 @@ export function FeatureSection() {
                         </div>
                       </div>
                     </CardContent>
-                    <CardFooter>
-                      <Button
-                        variant="ghost"
-                        className="text-blue-200 hover:text-white hover:bg-blue-700/50"
-                      >
-                        Learn more <ArrowRight className="ml-2 h-4 w-4" />
-                      </Button>
-                    </CardFooter>
                   </Card>
                 </motion.div>
                 <motion.div variants={item} className="order-1 md:order-2 relative">
