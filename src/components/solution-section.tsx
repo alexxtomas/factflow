@@ -111,7 +111,7 @@ export function SolutionSection() {
             </Badge>
           </motion.div>
 
-          <motion.h1
+          <motion.h2
             variants={itemVariants}
             className="mb-6 text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl"
           >
@@ -125,7 +125,7 @@ export function SolutionSection() {
                 transition={{ delay: 1, duration: 0.8 }}
               />
             </span>
-          </motion.h1>
+          </motion.h2>
 
           <motion.p
             variants={itemVariants}

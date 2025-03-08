@@ -5,6 +5,9 @@ import { Hero } from '@/components/hero';
 import { ProblemStatmentSection } from '@/components/problem-statment-section';
 import { SolutionSection } from '@/components/solution-section';
 import { MockupShowcase } from '@/components/mockup-showcase';
+import { Marquee } from '@/components/magicui/marquee';
+import { ReviewCard } from '@/components/review-card';
+import { Testimonials } from '@/components/testimonials';
 
 export default function Home() {
   return (
@@ -15,103 +18,10 @@ export default function Home() {
       {/* Solution Section */}
       <SolutionSection />
 
-      {/* Mockup Showcase */}
-      {/* <section className="py-20 bg-blue-900 text-white">
-        <div className="container mx-auto px-4 max-w-screen-xl">
-          <div className="max-w-3xl mx-auto text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">See the Difference for Yourself</h2>
-            <p className="text-xl text-blue-200">
-              FactFlow transforms how you consume news, giving you clarity in a world of confusion.
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="bg-blue-800 p-6 rounded-lg">
-              <div className="aspect-w-16 aspect-h-9 mb-6">
-                <Image
-                  src="/placeholder.svg?height=400&width=600"
-                  alt="Mobile app mockup"
-                  width={600}
-                  height={400}
-                  className="rounded-lg w-full h-auto"
-                />
-              </div>
-              <h3 className="text-xl font-bold mb-2"> Web Experience</h3>
-
-              <p className="text-blue-200">
-                Discover balanced news anytime, anywhere with our intuitive, desktop-optimized
-                interface designed for seamless browsing.
-              </p>
-            </div>
-
-            <div className="bg-blue-800 p-6 rounded-lg">
-              <div className="aspect-w-16 aspect-h-9 mb-6">
-                <Image
-                  src="/placeholder.svg?height=400&width=600"
-                  alt="Bias detection feature"
-                  width={600}
-                  height={400}
-                  className="rounded-lg w-full h-auto"
-                />
-              </div>
-              <h3 className="text-xl font-bold mb-2">Bias Detection</h3>
-              <p className="text-blue-200">
-                See exactly how different outlets spin the same story with our visual bias
-                indicators.
-              </p>
-            </div>
-
-            <div className="bg-blue-800 p-6 rounded-lg">
-              <div className="aspect-w-16 aspect-h-9 mb-6">
-                <Image
-                  src="/placeholder.svg?height=400&width=600"
-                  alt="Daily digest feature"
-                  width={600}
-                  height={400}
-                  className="rounded-lg w-full h-auto"
-                />
-              </div>
-              <h3 className="text-xl font-bold mb-2">Daily Digest</h3>
-              <p className="text-blue-200">
-                Start your day with a personalized, balanced summary of what truly matters.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section> */}
       <MockupShowcase />
 
       {/* Testimonials */}
-      <section className="py-20">
-        <div className="container mx-auto px-4 max-w-screen-xl">
-          <div className="max-w-3xl mx-auto text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              People Are Breaking Free from Media Manipulation
-            </h2>
-            <p className="text-xl text-gray-600">
-              Join thousands who've discovered what it means to be truly informed.
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-8">
-            <TestimonialCard
-              quote="I was tired of feeling manipulated by the news. FactFlow showed me how much bias I was consuming daily. Now I finally feel informed, not influenced."
-              author="Michael K."
-              role="Marketing Executive"
-            />
-            <TestimonialCard
-              quote="As a teacher, I needed a reliable news source to discuss current events with my students. FactFlow provides the balanced perspective I've been searching for."
-              author="Sarah J."
-              role="High School Teacher"
-            />
-            <TestimonialCard
-              quote="I was shocked to see how differently the same story was covered across media outlets. FactFlow has completely changed how I understand world events."
-              author="David T."
-              role="Software Engineer"
-            />
-          </div>
-        </div>
-      </section>
+      <Testimonials />
 
       {/* Pricing */}
       {/* <section className="py-20 bg-gray-50">
