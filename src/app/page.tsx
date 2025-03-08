@@ -1,12 +1,9 @@
 import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
-import TestimonialCard from '../components/testimonial-card';
 import { Hero } from '@/components/hero';
 import { ProblemStatmentSection } from '@/components/problem-statment-section';
 import { SolutionSection } from '@/components/solution-section';
 import { MockupShowcase } from '@/components/mockup-showcase';
-import { Marquee } from '@/components/magicui/marquee';
-import { ReviewCard } from '@/components/review-card';
 import { Testimonials } from '@/components/testimonials';
 
 export default function Home() {
