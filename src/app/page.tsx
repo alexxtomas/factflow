@@ -5,11 +5,13 @@ import { ProblemStatmentSection } from '@/components/problem-statment-section';
 import { SolutionSection } from '@/components/solution-section';
 import { MockupShowcase } from '@/components/mockup-showcase';
 import { Testimonials } from '@/components/testimonials';
+import { NewHero } from '@/components/new-hero';
 
 export default function Home() {
   return (
     <main className="flex flex-col min-h-screen ">
-      <Hero />
+      {/* <Hero /> */}
+      <NewHero />
       <ProblemStatmentSection />
 
       {/* Solution Section */}
