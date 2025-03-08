@@ -82,7 +82,10 @@ export function NewHero() {
   };
 
   return (
-    <header className="relative min-h-screen w-full overflow-hidden bg-gradient-to-br from-blue-950 via-blue-900 to-blue-800">
+    <header
+      id="hero"
+      className="relative min-h-screen w-full overflow-hidden bg-gradient-to-br from-blue-950 via-blue-900 to-blue-800"
+    >
       <ParticleBackground />
 
       <div className="absolute inset-0 bg-gradient-radial from-transparent to-blue-950/50" />

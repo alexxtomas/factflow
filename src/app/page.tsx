@@ -3,7 +3,7 @@ import { ArrowRight } from 'lucide-react';
 import { Hero } from '@/components/hero';
 import { ProblemStatmentSection } from '@/components/problem-statment-section';
 import { SolutionSection } from '@/components/solution-section';
-import { MockupShowcase } from '@/components/mockup-showcase';
+import { FeatureSection } from '@/components/feature-section';
 import { Testimonials } from '@/components/testimonials';
 import { NewHero } from '@/components/new-hero';
 
@@ -17,7 +17,7 @@ export default function Home() {
       {/* Solution Section */}
       <SolutionSection />
 
-      <MockupShowcase />
+      <FeatureSection />
 
       {/* Testimonials */}
       <Testimonials />
